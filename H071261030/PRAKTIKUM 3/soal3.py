@@ -38,7 +38,7 @@ while kursi_bus > 0:
         
     total_pendapatan += harga
     kursi_bus -= 1
-    
-print("Total pednapatan perjanan PO BUS kali ini: Rp", total_pendapatan)
+        
+print("Total pendapatan perjanan PO BUS kali ini: Rp", total_pendapatan)
 
     
