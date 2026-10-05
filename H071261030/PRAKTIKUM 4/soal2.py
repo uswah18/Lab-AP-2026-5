@@ -11,12 +11,16 @@ while True:
     nilai_ujian = (input("Masukkan nilai ujian siswa (kosongkan untuk selesai): "))
     if nilai_ujian == "":
         break
-    daftar_nilai.append(float(nilai_ujian))
+    
+    if int(nilai_ujian) < 0 or int(nilai_ujian) > 100:
+        print("nd bisa di nilai")
+        continue
+    daftar_nilai.append(float(nilai_ujian)) #
 
 if len(daftar_nilai) == 0:
     print("Data nilai tidak tersedia.")
 
 rata_rata, tertinggi, terendah = hitung_statistik(*daftar_nilai)
 print("Rata-rata kelas:", rata_rata)
-print("Nilai tertinggi:", tertinggi:g)
-print("Nilai terendah:", terendah:g)
+print("Nilai tertinggi:", tertinggi)
+print("Nilai terendah:", terendah)

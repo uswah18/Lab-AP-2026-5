@@ -1,5 +1,3 @@
-
-
 def hitung_subtotal(harga, jumlah, adalah_member=False):
     subtotal = harga * jumlah
     if adalah_member:
@@ -29,4 +27,3 @@ def program_kasir():
         print("Total belanja: Rp", total_pendapatan)
         
 program_kasir()
-
